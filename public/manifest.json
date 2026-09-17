@@ -1,0 +1,20 @@
+{
+  "id": "/",
+  "name": "Kiabi Price Sign Generator",
+  "short_name": "Kiabi Signs",
+  "description": "Generate bilingual English and Arabic retail price signs for Kiabi. Optimized for iPhone and A4 printing.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#e2001a",
+  "background_color": "#f4f5f7",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

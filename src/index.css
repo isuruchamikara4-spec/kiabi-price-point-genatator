@@ -1,0 +1,178 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --accent: #e2001a;
+  }
+}
+
+/* iOS viewport safe area handling */
+body {
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Print Styles for A4 Centered Kiabi Price Sign */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+
+  html,
+  body {
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #fff !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Hide all UI elements except the sign container */
+  .no-print {
+    display: none !important;
+  }
+
+  /* When printing A4 Paysage, hide A5 */
+  body.mode-a4 .preview-wrapper-a5 {
+    display: none !important;
+  }
+
+  /* When printing A5 Paysage, hide A4 */
+  body.mode-a5 .preview-wrapper-print {
+    display: none !important;
+  }
+
+  .preview-wrapper-print {
+    width: 100% !important;
+    height: 100vh !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 0 !important;
+  }
+
+  .sign-print-container {
+    width: 190mm !important;
+    height: 140mm !important;
+    border: 2.5px solid #000 !important;
+    border-radius: 0 !important;
+    padding: 24mm 20mm 16mm 20mm !important;
+    box-shadow: none !important;
+    margin: auto !important;
+    box-sizing: border-box !important;
+    page-break-inside: avoid !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    background: #fff !important;
+  }
+
+  .tag-line-print {
+    font-size: 32pt !important;
+    font-weight: 800 !important;
+    color: #000 !important;
+    line-height: 1.2 !important;
+  }
+
+  .tag-subline-print {
+    font-size: 26pt !important;
+    font-weight: 700 !important;
+    color: #111 !important;
+    line-height: 1.2 !important;
+  }
+
+  .tag-size-line-print {
+    font-size: 22pt !important;
+    font-weight: 700 !important;
+    color: #222 !important;
+  }
+
+  .tag-prefix-print {
+    font-size: 20pt !important;
+    font-weight: 600 !important;
+    color: #444 !important;
+    margin-top: 4pt !important;
+  }
+
+  .tag-price-block-print {
+    display: flex !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+    margin-top: auto !important;
+    gap: 12pt !important;
+    padding-bottom: 4mm !important;
+  }
+
+  .tag-currency-print {
+    font-size: 42pt !important;
+    font-weight: 900 !important;
+    color: #000 !important;
+    margin-top: 16pt !important;
+  }
+
+  .tag-price-print {
+    font-size: 160pt !important;
+    font-weight: 900 !important;
+    line-height: 0.82 !important;
+    color: #000 !important;
+    letter-spacing: -2pt !important;
+  }
+
+  /* A5 Paysage Multi-Item Stand Print Styles */
+  .preview-wrapper-a5 {
+    width: 100% !important;
+    height: 100vh !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 0 !important;
+  }
+
+  .a5-stand-container {
+    width: 135mm !important;
+    height: 195mm !important;
+    border: 1.8px solid #000 !important;
+    border-radius: 4px !important;
+    padding: 16mm 14mm 10mm 14mm !important;
+    box-shadow: none !important;
+    margin: auto !important;
+    box-sizing: border-box !important;
+    page-break-inside: avoid !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    background: #fff !important;
+  }
+
+  .a5-item-row {
+    border-bottom: 1px solid #e5e7eb !important;
+    padding-bottom: 10pt !important;
+    margin-bottom: 8pt !important;
+    gap: 16pt !important;
+  }
+
+  .a5-item-name {
+    font-size: 20pt !important;
+    font-weight: 800 !important;
+    color: #000 !important;
+  }
+
+  .a5-curr {
+    font-size: 12pt !important;
+    font-weight: 900 !important;
+    color: #111 !important;
+  }
+
+  .a5-num {
+    font-size: 26pt !important;
+    font-weight: 900 !important;
+    color: #000 !important;
+  }
+}

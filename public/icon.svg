@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="120" fill="#e2001a"/>
+  <!-- Tag shape -->
+  <path d="M120 180 C120 150 140 130 170 130 L290 130 C306 130 321 137 332 148 L412 228 C425 241 425 263 412 276 L296 392 C283 405 261 405 248 392 L148 292 C137 281 130 266 130 250 L130 180 Z" fill="#ffffff" opacity="0.18"/>
+  <rect x="76" y="140" width="360" height="232" rx="28" fill="#ffffff"/>
+  <!-- KIABI Text -->
+  <text x="256" y="240" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="76" fill="#e2001a" text-anchor="middle" letter-spacing="4">KIABI</text>
+  <!-- Subtitle -->
+  <text x="256" y="300" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="28" fill="#111111" text-anchor="middle" letter-spacing="2">PRICE SIGN</text>
+  <!-- Price symbol / dot -->
+  <circle cx="112" cy="180" r="12" fill="#e2001a"/>
+</svg>

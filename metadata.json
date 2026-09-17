@@ -1,0 +1,6 @@
+{
+  "name": "Kiabi Price Sign Generator",
+  "description": "Generate bilingual English and Arabic retail price signs for Kiabi. Fully optimized for iPhone with print and offline file download.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
